@@ -1,0 +1,78 @@
+project:
+  name: spacecraft_hybrid_estimator
+  output_dir: outputs
+  seed: 42
+  device: cpu
+  synthetic:
+    dt: 1.0
+    horizon: 240
+    train_trajectories: 80
+    val_trajectories: 20
+    test_trajectories: 100
+    monte_carlo_trials: 100
+    scenarios: [quiet, maneuver, biased_sensors, high_disturbance, degraded_measurements, storm]
+    include_range_doppler: true
+  simulation:
+    mu_earth: 398600.4418
+    radius_earth: 6378.137
+    j2: 1.08262668e-3
+    cd: 2.2
+    cr: 1.3
+    area: 12.0
+    mass: 920.0
+    inertia: [[145.0, 0.0, 0.0], [0.0, 160.0, 0.0], [0.0, 0.0, 120.0]]
+  measurement_noise:
+    gyro: 0.0010
+    accel: 0.020
+    vector: 0.012
+    gps_pos: 0.012
+    gps_vel: 0.0008
+    range: 0.02
+    doppler: 0.0002
+  process_noise:
+    bg: 2.0e-5
+    ba: 2.0e-4
+    torque: 0.002
+    accel: 0.01
+  filter:
+    ukf_alpha: 0.1
+    ukf_beta: 2.0
+    ukf_kappa: 0.0
+    q_scale: 0.5
+    r_scale: 2.0
+  # [FUSION UPGRADE] PINN prior fused as pseudo-measurement with
+  # R_pinn = diag(predicted variance) * pinn_r_scale. Smaller = trust PINN more.
+  # (convex-blend coupling retained only for the learning-only baselines)
+  fusion:
+    pinn_r_scale: 1.0
+    coupling:
+      PINN-only: 1.00
+      Transformer-only: 1.00
+  training:
+    window: 8
+    batch_size: 256
+    # [PERF] longer budget with early stopping (patience) does the cutoff
+    pinn_epochs: 150
+    transformer_epochs: 80
+    lr: 0.001
+    hidden: 128
+    # [HYPERPARAM FIX] now configurable; paper states H=4 hidden layers, tanh.
+    depth: 4
+    activation: tanh
+    lambda_norm: 0.1
+    patience: 15
+    model_dim: 64
+    num_heads: 4
+    num_layers: 2
+  # [ABLATION] python main.py --mode ablate
+  ablation:
+    seeds: [0, 1, 2]
+    epochs: 15
+    subset_train_trajectories: 40
+    subset_test_trajectories: 20
+    depth: [2, 4, 6]
+    hidden: [64, 128, 256]
+    window: [2, 4, 8]
+    lr: [3.0e-4, 1.0e-3, 3.0e-3]
+    lambda_norm: [0.0, 0.1, 1.0]
+    pinn_r_scale: [0.25, 1.0, 4.0, 16.0]
