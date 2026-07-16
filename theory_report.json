@@ -1,0 +1,421 @@
+{
+  "observability": {
+    "n_evaluations": 20,
+    "full_rank_fraction": 1.0,
+    "min_rank": 25,
+    "state_dim": 25,
+    "median_condition_number": 2571031942433.505,
+    "median_min_singular_value": 5.429148932005141e-11,
+    "detail": [
+      {
+        "scenario": "quiet",
+        "k0": 0,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 2.8882171730568115e-11,
+        "condition_number": 4832067032642.05
+      },
+      {
+        "scenario": "quiet",
+        "k0": 75,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 1.505631532733e-10,
+        "condition_number": 927020368098.3783
+      },
+      {
+        "scenario": "quiet",
+        "k0": 151,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 7.057849915497727e-11,
+        "condition_number": 1977616866441.2104
+      },
+      {
+        "scenario": "quiet",
+        "k0": 227,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 1.3947945511438956e-10,
+        "condition_number": 1000702600425.6702
+      },
+      {
+        "scenario": "maneuver",
+        "k0": 0,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 1.0181442818546371e-11,
+        "condition_number": 13707367688768.361
+      },
+      {
+        "scenario": "maneuver",
+        "k0": 75,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 7.82067295874274e-11,
+        "condition_number": 1784694502591.5447
+      },
+      {
+        "scenario": "maneuver",
+        "k0": 151,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 5.469928333642325e-11,
+        "condition_number": 2551720712377.2285
+      },
+      {
+        "scenario": "maneuver",
+        "k0": 227,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 1.4063145584758202e-10,
+        "condition_number": 992505547060.0487
+      },
+      {
+        "scenario": "biased_sensors",
+        "k0": 0,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 1.9369051800657478e-11,
+        "condition_number": 7205308022112.587
+      },
+      {
+        "scenario": "biased_sensors",
+        "k0": 75,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 5.2539420243366697e-11,
+        "condition_number": 2656580109406.5786
+      },
+      {
+        "scenario": "biased_sensors",
+        "k0": 151,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 1.142924565839117e-10,
+        "condition_number": 1221229486838.5017
+      },
+      {
+        "scenario": "biased_sensors",
+        "k0": 227,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 2.3661594947491443e-11,
+        "condition_number": 5898907268144.159
+      },
+      {
+        "scenario": "high_disturbance",
+        "k0": 0,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 1.5493073678049286e-11,
+        "condition_number": 9007870193563.52
+      },
+      {
+        "scenario": "high_disturbance",
+        "k0": 75,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 1.4667960150097377e-10,
+        "condition_number": 951563403934.5963
+      },
+      {
+        "scenario": "high_disturbance",
+        "k0": 151,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 5.3883695303679574e-11,
+        "condition_number": 2590343172489.7817
+      },
+      {
+        "scenario": "high_disturbance",
+        "k0": 227,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 5.094392085416679e-11,
+        "condition_number": 2739825826831.307
+      },
+      {
+        "scenario": "degraded_measurements",
+        "k0": 0,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 3.400948944308946e-11,
+        "condition_number": 4103572483473.5254
+      },
+      {
+        "scenario": "degraded_measurements",
+        "k0": 75,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 2.745515170399393e-10,
+        "condition_number": 508375455912.7305
+      },
+      {
+        "scenario": "degraded_measurements",
+        "k0": 151,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 3.4187287811091566e-11,
+        "condition_number": 4082723984645.1353
+      },
+      {
+        "scenario": "degraded_measurements",
+        "k0": 227,
+        "rank": 25,
+        "state_dim": 25,
+        "min_singular_value": 1.6118739642207437e-10,
+        "condition_number": 865932804585.6655
+      }
+    ]
+  },
+  "consistency_chi2": {
+    "Adaptive_EKF": {
+      "nees_mean": 99.58423217149398,
+      "nees_dof": 24,
+      "nees_within_95pct_bounds": 0.3458333333333333,
+      "nees_bounded_fraction": 0.7375,
+      "nis_mean": 28.559273242977504,
+      "nis_dof": 20,
+      "nis_within_95pct_bounds": 0.1
+    },
+    "EKF": {
+      "nees_mean": 126.56412545153616,
+      "nees_dof": 24,
+      "nees_within_95pct_bounds": 0.35,
+      "nees_bounded_fraction": 0.7416666666666667,
+      "nis_mean": 28.656623775755374,
+      "nis_dof": 20,
+      "nis_within_95pct_bounds": 0.1
+    },
+    "MEKF": {
+      "nees_mean": 8.97000656043461,
+      "nees_dof": 24,
+      "nees_within_95pct_bounds": 0.058333333333333334,
+      "nees_bounded_fraction": 0.9916666666666667,
+      "nis_mean": 28.84971331849825,
+      "nis_dof": 20,
+      "nis_within_95pct_bounds": 0.10833333333333334
+    },
+    "PINN_EKF": {
+      "nees_mean": 101.29796878798831,
+      "nees_dof": 24,
+      "nees_within_95pct_bounds": 0.3458333333333333,
+      "nees_bounded_fraction": 0.7791666666666667,
+      "nis_mean": 28.976916174626428,
+      "nis_dof": 20,
+      "nis_within_95pct_bounds": 0.07916666666666666
+    },
+    "PINN_MEKF": {
+      "nees_mean": 8.400093321970443,
+      "nees_dof": 24,
+      "nees_within_95pct_bounds": 0.041666666666666664,
+      "nees_bounded_fraction": 0.9916666666666667,
+      "nis_mean": 29.22480320958201,
+      "nis_dof": 20,
+      "nis_within_95pct_bounds": 0.1
+    },
+    "PINN_UKF": {
+      "nees_mean": 191.49472716337198,
+      "nees_dof": 24,
+      "nees_within_95pct_bounds": 0.19166666666666668,
+      "nees_bounded_fraction": 0.75,
+      "nis_mean": 33.933550026741074,
+      "nis_dof": 20,
+      "nis_within_95pct_bounds": 0.125
+    },
+    "PINN_UKF_MEKF": {
+      "nees_mean": 5.69817395287721,
+      "nees_dof": 24,
+      "nees_within_95pct_bounds": 0.004166666666666667,
+      "nees_bounded_fraction": 0.9958333333333333,
+      "nis_mean": 29.350044319894852,
+      "nis_dof": 20,
+      "nis_within_95pct_bounds": 0.09166666666666666
+    },
+    "Transformer_MEKF": {
+      "nees_mean": 8.599269420787806,
+      "nees_dof": 24,
+      "nees_within_95pct_bounds": 0.04583333333333333,
+      "nees_bounded_fraction": 0.9916666666666667,
+      "nis_mean": 28.928178541803227,
+      "nis_dof": 20,
+      "nis_within_95pct_bounds": 0.10416666666666667
+    },
+    "UKF": {
+      "nees_mean": 237.00580571279468,
+      "nees_dof": 24,
+      "nees_within_95pct_bounds": 0.175,
+      "nees_bounded_fraction": 0.6833333333333333,
+      "nis_mean": 37.921504955074035,
+      "nis_dof": 20,
+      "nis_within_95pct_bounds": 0.12083333333333333
+    }
+  },
+  "bounded_error_fit": {
+    "Adaptive_EKF": {
+      "fit_a": 1.1259549955455366,
+      "fit_rho": 0.03562881308174612,
+      "fit_b_asymptotic_bound": 0.05907318543047425,
+      "sup_error": 1.1850461408062176,
+      "final_error": 0.05544456969216849,
+      "steady_state_error_mean_last_25pct": 0.05890301308310173,
+      "error_is_bounded": true
+    },
+    "EKF": {
+      "fit_a": 1.1278372653101416,
+      "fit_rho": 0.03786371987674788,
+      "fit_b_asymptotic_bound": 0.057185255106633866,
+      "sup_error": 1.1850461408062176,
+      "final_error": 0.05365206375262924,
+      "steady_state_error_mean_last_25pct": 0.05683878454491158,
+      "error_is_bounded": true
+    },
+    "MEKF": {
+      "fit_a": 1.1338198614275858,
+      "fit_rho": 0.04303281367459894,
+      "fit_b_asymptotic_bound": 0.05107118575417672,
+      "sup_error": 1.184929010045814,
+      "final_error": 0.04265992879660304,
+      "steady_state_error_mean_last_25pct": 0.04879085918607365,
+      "error_is_bounded": true
+    },
+    "PINN_EKF": {
+      "fit_a": 0.46805166526806796,
+      "fit_rho": 0.15680507427570303,
+      "fit_b_asymptotic_bound": 0.04783031585443976,
+      "sup_error": 0.517251898362945,
+      "final_error": 0.051449078316383144,
+      "steady_state_error_mean_last_25pct": 0.04564648523318223,
+      "error_is_bounded": true
+    },
+    "PINN_MEKF": {
+      "fit_a": 0.47476771848171706,
+      "fit_rho": 0.17740074327296398,
+      "fit_b_asymptotic_bound": 0.04036425199312722,
+      "sup_error": 0.5170213435069176,
+      "final_error": 0.04102186372642346,
+      "steady_state_error_mean_last_25pct": 0.03531577511489166,
+      "error_is_bounded": true
+    },
+    "PINN_only": {
+      "fit_a": 3.16652391597384e-11,
+      "fit_rho": 1.5163253603834415e-12,
+      "fit_b_asymptotic_bound": 71.91944950167024,
+      "sup_error": 209.5902207359066,
+      "final_error": 209.5902207359066,
+      "steady_state_error_mean_last_25pct": 162.75682009664098,
+      "error_is_bounded": false
+    },
+    "PINN_UKF": {
+      "fit_a": 0.6446633396143083,
+      "fit_rho": 0.1721277503379394,
+      "fit_b_asymptotic_bound": 0.052282627373678794,
+      "sup_error": 0.7487629398631092,
+      "final_error": 0.019400406445731943,
+      "steady_state_error_mean_last_25pct": 0.0338592865734879,
+      "error_is_bounded": true
+    },
+    "PINN_UKF_MEKF": {
+      "fit_a": 0.6634872309935013,
+      "fit_rho": 0.25615172599500374,
+      "fit_b_asymptotic_bound": 0.031076518733233246,
+      "sup_error": 0.6978702406655398,
+      "final_error": 0.02179951513254184,
+      "steady_state_error_mean_last_25pct": 0.025244872577718413,
+      "error_is_bounded": true
+    },
+    "Transformer_MEKF": {
+      "fit_a": 0.8415181401951776,
+      "fit_rho": 0.08136968623610195,
+      "fit_b_asymptotic_bound": 0.042362176587005244,
+      "sup_error": 0.8842127479439369,
+      "final_error": 0.04160667952847292,
+      "steady_state_error_mean_last_25pct": 0.03883914678641614,
+      "error_is_bounded": true
+    },
+    "Transformer_only": {
+      "fit_a": 3.9616291821196244e-11,
+      "fit_rho": 4.368200338713402e-13,
+      "fit_b_asymptotic_bound": 45.91284034516113,
+      "sup_error": 125.96042426080587,
+      "final_error": 125.96042426080587,
+      "steady_state_error_mean_last_25pct": 97.70497294975556,
+      "error_is_bounded": false
+    },
+    "UKF": {
+      "fit_a": 1.4837447339116057,
+      "fit_rho": 0.09066195911293538,
+      "fit_b_asymptotic_bound": 0.08178368238661227,
+      "sup_error": 1.5655076020740057,
+      "final_error": 0.025254598855369653,
+      "steady_state_error_mean_last_25pct": 0.04792280395572098,
+      "error_is_bounded": true
+    }
+  },
+  "lyapunov_candidate": {
+    "Adaptive_EKF": {
+      "V_mean": 99.58423217149398,
+      "V_sup": 3560.8966883491817,
+      "fraction_below_chi2_975": 0.7375,
+      "mean_drift_when_above_bound": -22.015305785816558,
+      "negative_drift_above_bound": true
+    },
+    "EKF": {
+      "V_mean": 126.56412545153616,
+      "V_sup": 4585.46345925684,
+      "fraction_below_chi2_975": 0.7416666666666667,
+      "mean_drift_when_above_bound": -22.18196863504484,
+      "negative_drift_above_bound": true
+    },
+    "MEKF": {
+      "V_mean": 8.97000656043461,
+      "V_sup": 279.5894430985903,
+      "fraction_below_chi2_975": 0.9916666666666667,
+      "mean_drift_when_above_bound": -128.864301110335,
+      "negative_drift_above_bound": true
+    },
+    "PINN_EKF": {
+      "V_mean": 101.29796878798831,
+      "V_sup": 4793.008168851862,
+      "fraction_below_chi2_975": 0.7791666666666667,
+      "mean_drift_when_above_bound": -19.088716947828296,
+      "negative_drift_above_bound": true
+    },
+    "PINN_MEKF": {
+      "V_mean": 8.400093321970443,
+      "V_sup": 169.69076825893046,
+      "fraction_below_chi2_975": 0.9916666666666667,
+      "mean_drift_when_above_bound": -73.6579254701678,
+      "negative_drift_above_bound": true
+    },
+    "PINN_UKF": {
+      "V_mean": 191.49472716337198,
+      "V_sup": 14424.476805497396,
+      "fraction_below_chi2_975": 0.75,
+      "mean_drift_when_above_bound": -25.135658793103225,
+      "negative_drift_above_bound": true
+    },
+    "PINN_UKF_MEKF": {
+      "V_mean": 5.69817395287721,
+      "V_sup": 228.68610454523338,
+      "fraction_below_chi2_975": 0.9958333333333333,
+      "mean_drift_when_above_bound": -190.62296204748742,
+      "negative_drift_above_bound": true
+    },
+    "Transformer_MEKF": {
+      "V_mean": 8.599269420787806,
+      "V_sup": 222.66500505021637,
+      "fraction_below_chi2_975": 0.9916666666666667,
+      "mean_drift_when_above_bound": -100.34742327103457,
+      "negative_drift_above_bound": true
+    },
+    "UKF": {
+      "V_mean": 237.00580571279468,
+      "V_sup": 15421.001347161953,
+      "fraction_below_chi2_975": 0.6833333333333333,
+      "mean_drift_when_above_bound": -36.267155353676735,
+      "negative_drift_above_bound": true
+    }
+  }
+}
